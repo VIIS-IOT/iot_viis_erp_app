@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include iot_viis *.css
+recursive-include iot_viis *.csv
+recursive-include iot_viis *.html
+recursive-include iot_viis *.ico
+recursive-include iot_viis *.js
+recursive-include iot_viis *.json
+recursive-include iot_viis *.md
+recursive-include iot_viis *.png
+recursive-include iot_viis *.py
+recursive-include iot_viis *.svg
+recursive-include iot_viis *.txt
+recursive-exclude iot_viis *.pyc
