@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-11-07 21:06:14.921878",
+ "default_view": "List",
+ "description": "H\u1ec7 s\u1ed1 chuy\u1ec3n \u0111\u1ed5i m\u1eb7c \u0111\u1ecbnh s\u1ebd l\u00e0: equivalent_factor = reference_unit/ equivalent_unit ",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "equivalent_factor",
+  "reference_unit",
+  "reference_unit_type",
+  "customer_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "equivalent_factor",
+   "fieldtype": "Float",
+   "label": "H\u1ec7 s\u1ed1 chuy\u1ec3n \u0111\u1ed5i"
+  },
+  {
+   "fieldname": "reference_unit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u0110\u01a1n v\u1ecb tham chi\u1ebfu",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_unit_type",
+   "fieldtype": "Select",
+   "label": "Lo\u1ea1i \u0111\u01a1n v\u1ecb tham chi\u1ebfu",
+   "options": "packing_unit\nunit"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "IoT Customer",
+   "options": "iot_customer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-08 18:12:58.141673",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_equivalent_unit",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

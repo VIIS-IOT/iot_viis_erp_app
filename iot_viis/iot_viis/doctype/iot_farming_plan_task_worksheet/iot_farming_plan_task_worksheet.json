@@ -1,0 +1,96 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2023-08-03 17:19:13.023571",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "description",
+  "quantity",
+  "type",
+  "task_id",
+  "exp_quantity",
+  "work_type_id",
+  "cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Label"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "Workday\nHour"
+  },
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Task Id",
+   "options": "iot_farming_plan_task"
+  },
+  {
+   "fieldname": "exp_quantity",
+   "fieldtype": "Float",
+   "label": "Exp Quantity"
+  },
+  {
+   "fieldname": "work_type_id",
+   "fieldtype": "Link",
+   "label": "Work Type",
+   "options": "iot_task_work_type"
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Float",
+   "label": "Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-17 10:25:46.283439",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_farming_plan_task_worksheet",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{shareholder}-{agency}-{customer_order}",
+ "creation": "2023-11-04 10:20:11.745544",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_order",
+  "fullname",
+  "image",
+  "gender",
+  "birthday",
+  "address",
+  "phone_number",
+  "passport",
+  "country",
+  "join_date",
+  "expired_day",
+  "bp",
+  "shareholder",
+  "agency",
+  "card_id",
+  "cb1",
+  "passport_img",
+  "description",
+  "customer_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_order",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 th\u1ee9 t\u1ef1 h\u1ed9i vi\u00ean"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "label": "H\u1ecd v\u00e0 t\u00ean"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Avata H\u1ed9i vi\u00ean"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gi\u1edbi t\u00ednh"
+  },
+  {
+   "fieldname": "birthday",
+   "fieldtype": "Data",
+   "label": "Ng\u00e0y th\u00e1ng n\u0103m sinh"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ecba ch\u1ec9"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 \u0111i\u1ec7n tho\u1ea1i"
+  },
+  {
+   "fieldname": "passport",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 h\u1ed9 chi\u1ebfu"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Qu\u1ed1c gia"
+  },
+  {
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "label": "Ng\u00e0y tham gia"
+  },
+  {
+   "fieldname": "expired_day",
+   "fieldtype": "Date",
+   "label": "Ng\u00e0y h\u1ebft h\u1ea1n"
+  },
+  {
+   "fieldname": "bp",
+   "fieldtype": "Section Break",
+   "label": "B\u1ed9 ph\u1eadn"
+  },
+  {
+   "fieldname": "shareholder",
+   "fieldtype": "Data",
+   "label": "C\u1ed5 \u0111\u00f4ng"
+  },
+  {
+   "fieldname": "agency",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ea1i l\u00fd"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Link",
+   "label": "M\u00e3 th\u1ebb",
+   "options": "iot_visitor_card"
+  },
+  {
+   "fieldname": "cb1",
+   "fieldtype": "Tab Break",
+   "label": "Th\u00f4ng tin th\u00eam"
+  },
+  {
+   "fieldname": "passport_img",
+   "fieldtype": "Attach Image",
+   "label": "H\u00ecnh \u1ea3nh h\u1ed9 chi\u1ebfu"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "M\u00f4 t\u1ea3 th\u00eam"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "IoT Customer",
+   "options": "iot_customer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-04 10:38:14.108575",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_visitor_infor",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

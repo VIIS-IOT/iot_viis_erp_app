@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-01 13:00:33.759599",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_user",
+  "user_name",
+  "status",
+  "time",
+  "note",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_user",
+   "fieldtype": "Link",
+   "label": "Customer user",
+   "options": "iot_customer_user"
+  },
+  {
+   "fetch_from": "customer_user.user_name",
+   "fieldname": "user_name",
+   "fieldtype": "Read Only",
+   "label": "User name"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "On time\nLate\nDay off"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-05 09:42:23.384646",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_timekeeping",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

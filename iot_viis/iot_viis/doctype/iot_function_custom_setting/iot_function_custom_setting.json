@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-14 09:32:31.035457",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "function_setting_label",
+  "type",
+  "identifier",
+  "data_type",
+  "icon_url",
+  "data_on_text",
+  "data_off_text",
+  "enum_value",
+  "unit",
+  "data_permission",
+  "description",
+  "data_measure_max",
+  "data_measure_min",
+  "data_eligible_max",
+  "data_eligible_min",
+  "chart_type",
+  "round_type",
+  "md_size",
+  "show_chart",
+  "index_sort",
+  "iot_device",
+  "iot_production_function"
+ ],
+ "fields": [
+  {
+   "fieldname": "function_setting_label",
+   "fieldtype": "Data",
+   "label": "Function setting label"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "identifier",
+   "fieldtype": "Data",
+   "label": "Identifier"
+  },
+  {
+   "fieldname": "data_type",
+   "fieldtype": "Select",
+   "label": "Data type",
+   "options": "Bool\nValue\nEnum\nRaw\nString\nGroup Break\nTab Break"
+  },
+  {
+   "fieldname": "icon_url",
+   "fieldtype": "Attach Image",
+   "label": "Icon url"
+  },
+  {
+   "fieldname": "data_on_text",
+   "fieldtype": "Data",
+   "label": "Data on text"
+  },
+  {
+   "fieldname": "data_off_text",
+   "fieldtype": "Data",
+   "label": "Data off text"
+  },
+  {
+   "fieldname": "enum_value",
+   "fieldtype": "Data",
+   "label": "Enum value"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Data",
+   "label": "Unit"
+  },
+  {
+   "fieldname": "data_permission",
+   "fieldtype": "Select",
+   "label": "Data permission",
+   "options": "r\nrw\nw"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "data_measure_max",
+   "fieldtype": "Data",
+   "label": "Data measure max"
+  },
+  {
+   "fieldname": "data_measure_min",
+   "fieldtype": "Data",
+   "label": "Data measure min"
+  },
+  {
+   "fieldname": "data_eligible_max",
+   "fieldtype": "Data",
+   "label": "Data eligible max"
+  },
+  {
+   "fieldname": "data_eligible_min",
+   "fieldtype": "Data",
+   "label": "Data eligible min"
+  },
+  {
+   "fieldname": "chart_type",
+   "fieldtype": "Select",
+   "label": "Chart type",
+   "options": "\nLine\nText\nText_Line\nGauge"
+  },
+  {
+   "fieldname": "round_type",
+   "fieldtype": "Select",
+   "label": "Round type",
+   "options": "\nRaw\nRound\nFloat_2\nFloat_3"
+  },
+  {
+   "fieldname": "md_size",
+   "fieldtype": "Int",
+   "label": "md_size"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_chart",
+   "fieldtype": "Check",
+   "label": "show_chart"
+  },
+  {
+   "fieldname": "index_sort",
+   "fieldtype": "Int",
+   "label": "Index Sort"
+  },
+  {
+   "fieldname": "iot_device",
+   "fieldtype": "Link",
+   "label": "Iot Device",
+   "options": "iot_device"
+  },
+  {
+   "fieldname": "iot_production_function",
+   "fieldtype": "Link",
+   "label": "Iot Production Function",
+   "options": "iot_production_function"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-14 09:33:09.541209",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_function_custom_setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

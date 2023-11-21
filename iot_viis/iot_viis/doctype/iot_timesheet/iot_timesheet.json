@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-09-17 22:18:47.898899",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "zone_id",
+  "project_id",
+  "in_time",
+  "in_lat",
+  "in_long",
+  "out_time",
+  "out_lat",
+  "out_long",
+  "work_time",
+  "in_image",
+  "out_image"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "User Id",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "zone_id",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Zone Id",
+   "options": "iot_zone"
+  },
+  {
+   "fieldname": "in_time",
+   "fieldtype": "Datetime",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Check In Time"
+  },
+  {
+   "fieldname": "in_lat",
+   "fieldtype": "Float",
+   "label": "Check In Latitude"
+  },
+  {
+   "fieldname": "in_long",
+   "fieldtype": "Float",
+   "label": "Check In Longitude"
+  },
+  {
+   "fieldname": "out_time",
+   "fieldtype": "Datetime",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Check Out Time"
+  },
+  {
+   "fieldname": "out_lat",
+   "fieldtype": "Float",
+   "label": "Check Out Latitude"
+  },
+  {
+   "fieldname": "out_long",
+   "fieldtype": "Float",
+   "label": "Check Out Longitude"
+  },
+  {
+   "fieldname": "work_time",
+   "fieldtype": "Float",
+   "label": "Work Time"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Data",
+   "label": "Project Id"
+  },
+  {
+   "fieldname": "in_image",
+   "fieldtype": "Attach Image",
+   "label": "Check in Image"
+  },
+  {
+   "fieldname": "out_image",
+   "fieldtype": "Attach Image",
+   "label": "Check out Image"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-18 00:22:15.514436",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_timesheet",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

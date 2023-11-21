@@ -1,0 +1,138 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-08-18 00:59:34.570104",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "import_history",
+  "type",
+  "category_entity",
+  "category_label",
+  "category_unit_label",
+  "product_entity",
+  "product_label",
+  "product_unit_label",
+  "unit_price",
+  "discount",
+  "quantity",
+  "total_price",
+  "supplier",
+  "quantity_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "import_history",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Import History",
+   "options": "iot_import",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Float",
+   "label": "Unit Price"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Float",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "category\nproduct",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category_entity",
+   "fieldtype": "Link",
+   "label": "Category Entity",
+   "options": "iot_category"
+  },
+  {
+   "fieldname": "product_entity",
+   "fieldtype": "Link",
+   "label": "Product Entity",
+   "options": "iot_agriculture_product"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Float",
+   "label": "Total Price"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "label": "Supplier"
+  },
+  {
+   "fetch_from": "category_entity.label",
+   "fieldname": "category_label",
+   "fieldtype": "Data",
+   "label": "Category label"
+  },
+  {
+   "fetch_from": "product_entity.label",
+   "fieldname": "product_label",
+   "fieldtype": "Data",
+   "label": "Product label"
+  },
+  {
+   "fetch_from": "category_entity.item_unit_label",
+   "fieldname": "category_unit_label",
+   "fieldtype": "Data",
+   "label": "Category unit label"
+  },
+  {
+   "fetch_from": "product_entity.unit_label",
+   "fieldname": "product_unit_label",
+   "fieldtype": "Data",
+   "label": "Product unit label"
+  },
+  {
+   "fieldname": "quantity_type",
+   "fieldtype": "Select",
+   "label": "Quantity type",
+   "options": "packing\nbasic"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-31 09:52:30.242556",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_import_detail",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,94 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-10-09 22:38:52.385192",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "shared_by",
+  "customer_id",
+  "shared_entity_type",
+  "shared_entity_id",
+  "share_with",
+  "view_permission",
+  "edit_permission",
+  "share_with_email"
+ ],
+ "fields": [
+  {
+   "fieldname": "shared_entity_type",
+   "fieldtype": "Select",
+   "label": "Shared entity type",
+   "options": "\nproject\nzone\ndevice"
+  },
+  {
+   "fieldname": "shared_entity_id",
+   "fieldtype": "Data",
+   "label": "Shared entity id"
+  },
+  {
+   "fieldname": "shared_by",
+   "fieldtype": "Link",
+   "label": "Shared by user",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer of shared entity",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "share_with",
+   "fieldtype": "Link",
+   "label": "Share with user",
+   "options": "iot_customer_user"
+  },
+  {
+   "default": "0",
+   "fieldname": "view_permission",
+   "fieldtype": "Check",
+   "label": "View Permission"
+  },
+  {
+   "default": "0",
+   "fieldname": "edit_permission",
+   "fieldtype": "Check",
+   "label": "Edit Permission"
+  },
+  {
+   "fieldname": "share_with_email",
+   "fieldtype": "Data",
+   "label": "Share with user email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-22 10:30:27.096261",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_sharing",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-17 16:03:16.895500",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "quantity",
+  "description",
+  "task_id",
+  "product_id",
+  "exp_quantity",
+  "lost_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "quantity"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Task",
+   "options": "iot_farming_plan_task",
+   "reqd": 1
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Link",
+   "label": "product",
+   "options": "iot_agriculture_product"
+  },
+  {
+   "fieldname": "exp_quantity",
+   "fieldtype": "Float",
+   "label": "exp quantity"
+  },
+  {
+   "fieldname": "lost_quantity",
+   "fieldtype": "Float",
+   "label": "lost quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-10 14:00:40.195826",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_production_quantity",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

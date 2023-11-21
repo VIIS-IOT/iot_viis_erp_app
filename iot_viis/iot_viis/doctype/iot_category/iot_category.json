@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{customer_id}-{iot_category_id}",
+ "creation": "2023-06-07 21:09:18.953637",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "iot_category_id",
+  "category_group",
+  "category_group_label",
+  "item_unit_id",
+  "item_unit_label",
+  "unit_short_label",
+  "producer",
+  "producer_label",
+  "image",
+  "description",
+  "customer_id",
+  "category_price",
+  "packing_unit_id",
+  "packing_unit_label",
+  "conversion_factor",
+  "tab_break_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "T\u00ean v\u1eadt t\u01b0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "category_group",
+   "fieldtype": "Link",
+   "label": "Lo\u1ea1i v\u1eadt t\u01b0",
+   "options": "iot_category_group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer",
+   "options": "iot_customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "iot_category_id",
+   "fieldtype": "Data",
+   "label": "M\u00e3 v\u1eadt t\u01b0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_unit_id",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "iot_item_unit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "producer",
+   "fieldtype": "Link",
+   "label": "\u0110\u01a1n v\u1ecb s\u1ea3n xu\u1ea5t",
+   "options": "iot_producer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Data",
+   "label": "Image"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fetch_from": "category_group.label",
+   "fieldname": "category_group_label",
+   "fieldtype": "Data",
+   "label": "category_group_label"
+  },
+  {
+   "fetch_from": "item_unit_id.label",
+   "fieldname": "item_unit_label",
+   "fieldtype": "Data",
+   "label": "item_unit_label"
+  },
+  {
+   "fieldname": "category_price",
+   "fieldtype": "Float",
+   "label": "\u0110\u01a1n gi\u00e1"
+  },
+  {
+   "fetch_from": "item_unit_id.short_label",
+   "fieldname": "unit_short_label",
+   "fieldtype": "Data",
+   "label": "unit_short_label"
+  },
+  {
+   "fieldname": "packing_unit_id",
+   "fieldtype": "Link",
+   "label": "Lo\u1ea1i \u0111\u00f3ng g\u00f3i",
+   "options": "iot_item_packing_unit"
+  },
+  {
+   "fetch_from": "packing_unit_id.label",
+   "fieldname": "packing_unit_label",
+   "fieldtype": "Data",
+   "label": "packing_unit_label"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "Dung t\u00edch / KLT"
+  },
+  {
+   "fetch_from": "producer.label",
+   "fieldname": "producer_label",
+   "fieldtype": "Data",
+   "label": "T\u00ean \u0111\u01a1n vi\u0323 sa\u0309n xu\u00e2\u0301t"
+  },
+  {
+   "fieldname": "tab_break_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-07 21:09:21.564893",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_category",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

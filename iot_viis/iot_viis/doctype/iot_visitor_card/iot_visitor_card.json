@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:card_number_uuid",
+ "creation": "2023-11-04 10:23:05.162685",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "card_number_uuid",
+  "card_id",
+  "card_status",
+  "card_type",
+  "customer_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_status",
+   "fieldtype": "Select",
+   "label": "Tr\u1ea1ng th\u00e1i",
+   "options": "Tr\u1ed1ng\n\u0110ang ho\u1ea1t \u0111\u1ed9ng\nKho\u00e1 th\u1ebb"
+  },
+  {
+   "fieldname": "card_type",
+   "fieldtype": "Select",
+   "label": "Lo\u1ea1i th\u1ebb",
+   "options": "Th\u1ebb h\u1ed9i vi\u00ean\nTh\u1ebb v\u00e3ng lai"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "IoT Customer",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "card_number_uuid",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 th\u1ebb",
+   "unique": 1
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Data",
+   "label": "M\u00e3 th\u1ebb",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-04 11:10:21.577909",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_visitor_card",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

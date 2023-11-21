@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{card_uuid}_{checkin_time}",
+ "creation": "2023-11-04 10:26:32.051634",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "card_uuid",
+  "card_location",
+  "image",
+  "check_time",
+  "visitor_id",
+  "type"
+ ],
+ "fields": [
+  {
+   "fieldname": "card_uuid",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Card Number",
+   "options": "iot_visitor_card",
+   "reqd": 1
+  },
+  {
+   "fieldname": "card_location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "V\u1ecb tr\u00ed qu\u1eb9t",
+   "reqd": 1
+  },
+  {
+   "fieldname": "visitor_id",
+   "fieldtype": "Link",
+   "label": "H\u1ed9i vi\u00ean",
+   "options": "iot_visitor_infor"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "H\u00ecnh \u1ea3nh"
+  },
+  {
+   "fieldname": "check_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "Th\u1eddi gian",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "check_in\ncheck_out"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-04 15:46:34.268130",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_visitor_session",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

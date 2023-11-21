@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-09-12 10:49:02.295287",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "quality_rating",
+  "entity",
+  "type",
+  "new_quantity",
+  "current_quantity",
+  "checking_ticket"
+ ],
+ "fields": [
+  {
+   "fieldname": "quality_rating",
+   "fieldtype": "Data",
+   "label": "Quality rating"
+  },
+  {
+   "fieldname": "entity",
+   "fieldtype": "Data",
+   "label": "Entity"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "category\nproduct"
+  },
+  {
+   "fieldname": "new_quantity",
+   "fieldtype": "Float",
+   "label": "New quantity"
+  },
+  {
+   "fieldname": "checking_ticket",
+   "fieldtype": "Link",
+   "label": "Checking ticket",
+   "options": "iot_inventory_checking"
+  },
+  {
+   "fieldname": "current_quantity",
+   "fieldtype": "Float",
+   "label": "Current quantity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-09-19 14:30:28.071401",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_inventory_checking_detail",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

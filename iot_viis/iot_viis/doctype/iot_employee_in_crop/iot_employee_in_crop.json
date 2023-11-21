@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{iot_crop}-{iot_customer_user}",
+ "creation": "2023-10-05 15:18:34.053754",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "iot_crop",
+  "iot_customer_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "iot_crop",
+   "fieldtype": "Link",
+   "label": "Iot Crop",
+   "options": "iot_crop"
+  },
+  {
+   "fieldname": "iot_customer_user",
+   "fieldtype": "Link",
+   "label": "IoT Customer User",
+   "options": "iot_customer_user"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-05 15:18:34.053754",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_employee_in_crop",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

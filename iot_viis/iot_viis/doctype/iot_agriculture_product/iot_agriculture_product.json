@@ -1,0 +1,122 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-08-13 16:11:56.291085",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "customer_id",
+  "image",
+  "unit_id",
+  "unit_label",
+  "unit_short_label",
+  "iot_product_id",
+  "product_price",
+  "description",
+  "packing_unit_id",
+  "packing_unit_label",
+  "conversion_factor"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Label",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer_id",
+   "options": "iot_customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fetch_from": "unit_id.label",
+   "fieldname": "unit_label",
+   "fieldtype": "Data",
+   "label": "unit label"
+  },
+  {
+   "fieldname": "iot_product_id",
+   "fieldtype": "Data",
+   "label": "IoT Product Id"
+  },
+  {
+   "fieldname": "product_price",
+   "fieldtype": "Float",
+   "label": "\u0110\u01a1n gi\u00e1"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "M\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "unit_id",
+   "fieldtype": "Link",
+   "label": "unit id",
+   "options": "iot_item_unit"
+  },
+  {
+   "fieldname": "packing_unit_id",
+   "fieldtype": "Link",
+   "label": "packing_unit",
+   "options": "iot_item_packing_unit"
+  },
+  {
+   "fetch_from": "packing_unit_id.label",
+   "fieldname": "packing_unit_label",
+   "fieldtype": "Data",
+   "label": "packing_unit_label"
+  },
+  {
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "Dung t\u00edch / KLT"
+  },
+  {
+   "fetch_from": "unit_id.short_label",
+   "fieldname": "unit_short_label",
+   "fieldtype": "Data",
+   "label": "unit short label"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-10-27 10:09:47.318866",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_agriculture_product",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
