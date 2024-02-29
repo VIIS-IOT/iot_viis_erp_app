@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-12-26 10:01:34.484133",
+ "default_view": "List",
+ "description": "\u0110\u1ee3t truy xu\u1ea5t ngu\u1ed3n g\u1ed1c. Khi ng\u01b0\u1eddi d\u00f9ng t\u1ea1o truy xu\u1ea5t th\u00ec s\u1ebd t\u1ea1o b\u1ea3n ghi trong b\u1ea3ng n\u00e0y. Ch\u1ee9a th\u00f4ng tin m\u00f9a v\u1ee5 c\u1ea7n truy xu\u1ea5t v\u00e0 expiry_time c\u1ee7a id truy xu\u1ea5t.",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "trace_id",
+  "crop_id",
+  "expiry_time",
+  "temp_token",
+  "label"
+ ],
+ "fields": [
+  {
+   "fieldname": "trace_id",
+   "fieldtype": "Data",
+   "label": "trace_id"
+  },
+  {
+   "fieldname": "crop_id",
+   "fieldtype": "Link",
+   "label": "crop_id ",
+   "options": "iot_crop"
+  },
+  {
+   "fieldname": "expiry_time",
+   "fieldtype": "Datetime",
+   "label": "expiry_time"
+  },
+  {
+   "fieldname": "temp_token",
+   "fieldtype": "Text",
+   "label": "temp_token"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-05 11:32:47.343692",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_traceability",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

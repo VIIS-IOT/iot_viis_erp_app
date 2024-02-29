@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-12-26 10:02:50.196384",
+ "default_view": "List",
+ "description": "L\u1ecbch s\u1eed truy xu\u1ea5t. M\u1ed7i l\u1ea7n user access v\u00e0o domain truy xu\u1ea5t ngu\u1ed3n g\u1ed1c th\u00f4ng qua token truy xu\u1ea5t, th\u00ec s\u1ebd create 1 b\u1ea3n ghi trong table n\u00e0y. Khi c\u1ea7n t\u00ednh s\u1ed1 l\u1ea7n m\u00e0 \u0111\u1ee3t truy xu\u1ea5t \u0111\u00f3 \u0111\u01b0\u1ee3c truy c\u1eadp, th\u00ec \u0111\u1ebfm s\u1ed1 l\u01b0\u1ee3ng b\u1ea3n ghi trong table n\u00e0y c\u00f3 link t\u1edbi \u0111\u1ee3t truy xu\u1ea5t \u0111\u00f3.",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "log_id",
+  "trace_id",
+  "scan_time",
+  "user_name",
+  "os_name",
+  "browser"
+ ],
+ "fields": [
+  {
+   "fieldname": "log_id",
+   "fieldtype": "Data",
+   "label": "log_id"
+  },
+  {
+   "fieldname": "trace_id",
+   "fieldtype": "Link",
+   "label": "trace_id",
+   "options": "iot_traceability"
+  },
+  {
+   "fieldname": "scan_time",
+   "fieldtype": "Datetime",
+   "label": "scan_time"
+  },
+  {
+   "fieldname": "user_name",
+   "fieldtype": "Data",
+   "label": "user_name"
+  },
+  {
+   "fieldname": "os_name",
+   "fieldtype": "Data",
+   "label": "os_name"
+  },
+  {
+   "fieldname": "browser",
+   "fieldtype": "Data",
+   "label": "browser"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-12-29 19:29:34.761600",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_traceability_log",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

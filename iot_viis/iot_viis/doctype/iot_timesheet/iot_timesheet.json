@@ -89,6 +89,8 @@
   {
    "fieldname": "project_id",
    "fieldtype": "Data",
+   "in_filter": 1,
+   "in_standard_filter": 1,
    "label": "Project Id"
   },
   {
@@ -104,7 +106,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-18 00:22:15.514436",
+ "modified": "2023-11-26 14:10:47.434461",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_timesheet",

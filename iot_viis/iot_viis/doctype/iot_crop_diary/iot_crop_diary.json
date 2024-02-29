@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-12-28 11:43:12.012752",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crop_owner",
+  "crop_id",
+  "location",
+  "longitude",
+  "latitude",
+  "short_description",
+  "business_info",
+  "phone",
+  "website",
+  "email",
+  "other_link",
+  "images",
+  "business_avatar"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop_id",
+   "fieldtype": "Link",
+   "label": "Crop id",
+   "options": "iot_crop"
+  },
+  {
+   "fieldname": "crop_owner",
+   "fieldtype": "Data",
+   "label": "Crop Owner"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "Longitude"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "short_description",
+   "fieldtype": "Data",
+   "label": "Short description"
+  },
+  {
+   "fieldname": "business_info",
+   "fieldtype": "Data",
+   "label": "Business info"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "other_link",
+   "fieldtype": "Data",
+   "label": "Other link"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Long Text",
+   "label": "Images"
+  },
+  {
+   "fieldname": "business_avatar",
+   "fieldtype": "Attach Image",
+   "label": "business_avatar"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-05 11:17:04.696717",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_crop_diary",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

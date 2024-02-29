@@ -1,0 +1,86 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-01-26 16:22:14.769031",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "timesheet_id",
+  "approver_id",
+  "request_date",
+  "approval_date",
+  "approval_status",
+  "comment",
+  "customer_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "timesheet_id",
+   "fieldtype": "Link",
+   "label": "timesheet_id",
+   "options": "iot_employee_timesheet"
+  },
+  {
+   "fieldname": "approver_id",
+   "fieldtype": "Link",
+   "label": "approver_id",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Datetime",
+   "label": "request_date"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Datetime",
+   "label": "approval_date"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "approval_status",
+   "options": "Approved\nProcessing\nDeny"
+  },
+  {
+   "fieldname": "comment",
+   "fieldtype": "Text",
+   "label": "comment"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "customer_id",
+   "options": "iot_customer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-01 14:24:41.974880",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_timesheet_approval",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

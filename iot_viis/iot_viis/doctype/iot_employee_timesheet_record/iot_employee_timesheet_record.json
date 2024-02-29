@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-02-02 08:17:47.163311",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "start_date",
+  "end_date",
+  "approval_status",
+  "currency",
+  "currency_label",
+  "exchange_rate",
+  "total_working_hour",
+  "total_billed_amount",
+  "customer_user_id",
+  "customer_id",
+  "is_deleted",
+  "approval_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "start_date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "end_date"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "approval_status",
+   "options": "Approved\nProcessing\nDeny"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "currency_label",
+   "fieldtype": "Data",
+   "label": "currency_label"
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "exchange_rate"
+  },
+  {
+   "fieldname": "total_working_hour",
+   "fieldtype": "Float",
+   "label": "total_working_hour"
+  },
+  {
+   "fieldname": "total_billed_amount",
+   "fieldtype": "Float",
+   "label": "total_billed_amount"
+  },
+  {
+   "fieldname": "customer_user_id",
+   "fieldtype": "Link",
+   "label": "customer_user_id",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "customer_id",
+   "options": "iot_customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "is_deleted"
+  },
+  {
+   "fieldname": "approval_id",
+   "fieldtype": "Link",
+   "label": "approval_id",
+   "options": "iot_timesheet_approval"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-02 08:18:31.340539",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_employee_timesheet_record",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
