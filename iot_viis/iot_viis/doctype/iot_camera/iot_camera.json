@@ -1,0 +1,81 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-04-22 16:33:14.842150",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "is_connected",
+  "rtsp",
+  "id",
+  "password",
+  "zone_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Camera name"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_connected",
+   "fieldtype": "Check",
+   "label": "Is connected"
+  },
+  {
+   "fieldname": "rtsp",
+   "fieldtype": "Data",
+   "label": "rtsp://"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "ID"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "fieldname": "zone_id",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "iot_zone"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:16:12.790433",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_camera",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}

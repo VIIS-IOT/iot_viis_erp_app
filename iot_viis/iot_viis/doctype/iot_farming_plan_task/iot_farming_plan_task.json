@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-05-17 15:17:21.975854",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "farming_plan_state",
+  "text_state",
+  "text_plan",
+  "text_assign_user",
+  "state_name",
+  "crop_name",
+  "label",
+  "image",
+  "supplies_id",
+  "supplies",
+  "start_date",
+  "end_date",
+  "index",
+  "assigned_to",
+  "status",
+  "description",
+  "enable_origin_tracing",
+  "task_progress",
+  "tag",
+  "added_in_diary"
+ ],
+ "fields": [
+  {
+   "fieldname": "farming_plan_state",
+   "fieldtype": "Link",
+   "label": "Farming plan - State",
+   "options": "iot_farming_plan_state"
+  },
+  {
+   "fieldname": "text_state",
+   "fieldtype": "Data",
+   "label": "Text state"
+  },
+  {
+   "fieldname": "text_plan",
+   "fieldtype": "Data",
+   "label": "Text plan"
+  },
+  {
+   "fieldname": "text_assign_user",
+   "fieldtype": "Data",
+   "label": "Text assign user"
+  },
+  {
+   "fetch_from": "farming_plan_state.label",
+   "fieldname": "state_name",
+   "fieldtype": "Read Only",
+   "label": "State name"
+  },
+  {
+   "fetch_from": "farming_plan_state.crop_name",
+   "fieldname": "crop_name",
+   "fieldtype": "Read Only",
+   "label": "Crop name"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "supplies_id",
+   "fieldtype": "Link",
+   "label": "Supplies ID",
+   "options": "iot_supplies"
+  },
+  {
+   "fetch_from": "supplies_id.label",
+   "fieldname": "supplies",
+   "fieldtype": "Read Only",
+   "label": "Supplies"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "Start date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "End date"
+  },
+  {
+   "fieldname": "index",
+   "fieldtype": "Data",
+   "label": "Index"
+  },
+  {
+   "fieldname": "assigned_to",
+   "fieldtype": "Link",
+   "label": "Assigned to",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "iot_task_status"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "enable_origin_tracing",
+   "fieldtype": "Check",
+   "label": "Enable origin tracing"
+  },
+  {
+   "fieldname": "task_progress",
+   "fieldtype": "Float",
+   "label": "Task progress"
+  },
+  {
+   "fieldname": "tag",
+   "fieldtype": "Data",
+   "label": "Tag"
+  },
+  {
+   "default": "0",
+   "fieldname": "added_in_diary",
+   "fieldtype": "Check",
+   "label": "Added in diary"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:12:11.829711",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_farming_plan_task",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "crop_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}

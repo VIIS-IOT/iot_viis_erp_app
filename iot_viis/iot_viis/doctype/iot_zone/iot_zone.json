@@ -1,0 +1,156 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-04-22 16:21:49.623506",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_id",
+  "project_name",
+  "image",
+  "label",
+  "customer_id",
+  "addition_info",
+  "location",
+  "country",
+  "city",
+  "address",
+  "province",
+  "district",
+  "ward",
+  "sort_index",
+  "lot",
+  "lat",
+  "longitude",
+  "latitude"
+ ],
+ "fields": [
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "Project ID",
+   "options": "iot_project"
+  },
+  {
+   "fetch_from": "project_id.label",
+   "fieldname": "project_name",
+   "fieldtype": "Read Only",
+   "label": "Project name"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer ID",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "addition_info",
+   "fieldtype": "JSON",
+   "label": "Addition info"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "State/ Province"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Data",
+   "label": "Ward"
+  },
+  {
+   "fieldname": "sort_index",
+   "fieldtype": "Int",
+   "label": "Index"
+  },
+  {
+   "fieldname": "lot",
+   "fieldtype": "Float",
+   "label": "lot"
+  },
+  {
+   "fieldname": "lat",
+   "fieldtype": "Float",
+   "label": "lat"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "longitude"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "latitude"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:10:19.717658",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_zone",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "project_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}

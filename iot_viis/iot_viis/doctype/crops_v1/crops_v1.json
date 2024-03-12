@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-05-07 15:36:08.646575",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "general_information_tab",
+  "crop",
+  "image",
+  "project",
+  "zone",
+  "section_1",
+  "light",
+  "humi",
+  "temp",
+  "plant_method",
+  "pot_size",
+  "bed_size",
+  "spacing",
+  "space",
+  "tab_break_11",
+  "text1",
+  "text2",
+  "text3",
+  "text4",
+  "add_guideline"
+ ],
+ "fields": [
+  {
+   "fieldname": "general_information_tab",
+   "fieldtype": "Tab Break",
+   "label": "Th\u00f4ng tin chung"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Data",
+   "label": "T\u00ean c\u00e2y tr\u1ed3ng"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "H\u00ecnh \u1ea3nh m\u00f4 t\u1ea3"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "iot_project"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Link",
+   "label": "Zone",
+   "options": "iot_zone"
+  },
+  {
+   "fieldname": "section_1",
+   "fieldtype": "Section Break",
+   "label": "\u00c1nh s\u00e1ng m\u00f4i tr\u01b0\u1eddng"
+  },
+  {
+   "fieldname": "light",
+   "fieldtype": "Data",
+   "label": "\u00c1nh s\u00e1ng (lx)"
+  },
+  {
+   "fieldname": "humi",
+   "fieldtype": "Data",
+   "label": "\u0110\u1ed9 \u1ea9m (%)"
+  },
+  {
+   "fieldname": "temp",
+   "fieldtype": "Data",
+   "label": "Nhi\u1ec7t \u0111\u1ed9 (oC)"
+  },
+  {
+   "fieldname": "plant_method",
+   "fieldtype": "Select",
+   "label": "Ph\u01b0\u01a1ng ph\u00e1p tr\u1ed3ng",
+   "options": "\nTr\u1ed3ng ch\u1eadu\nTr\u1ed3ng tr\u00ean \u0111\u1ea5t\nTh\u1ee7y canh"
+  },
+  {
+   "fieldname": "pot_size",
+   "fieldtype": "Data",
+   "label": "K\u00edch th\u01b0\u1edbc ch\u1eadu"
+  },
+  {
+   "fieldname": "bed_size",
+   "fieldtype": "Data",
+   "label": "K\u00edch th\u01b0\u1edbc lu\u1ed1ng"
+  },
+  {
+   "fieldname": "spacing",
+   "fieldtype": "Data",
+   "label": "Kho\u1ea3ng c\u00e1ch gi\u1eefa c\u00e1c c\u00e2y"
+  },
+  {
+   "description": "Kh\u00f4ng gian m\u1edf - ngo\u00e0i tr\u1eddi.\nKh\u00f4ng gian k\u00edn - nh\u00e0 k\u00ednh, container, trong nh\u00e0,....",
+   "fieldname": "space",
+   "fieldtype": "Select",
+   "label": "Kh\u00f4ng gian tr\u1ed3ng",
+   "options": "\nKh\u00f4ng gian m\u1edf\nKh\u00f4ng gian k\u00edn"
+  },
+  {
+   "fieldname": "tab_break_11",
+   "fieldtype": "Tab Break",
+   "label": "H\u01b0\u1edbng d\u1eabn ch\u0103m  s\u00f3c"
+  },
+  {
+   "fieldname": "text1",
+   "fieldtype": "Small Text",
+   "label": "H\u01b0\u1edbng d\u1eabn gieo h\u1ea1t"
+  },
+  {
+   "fieldname": "text2",
+   "fieldtype": "Small Text",
+   "label": "H\u01b0\u1edbng d\u1eabn t\u01b0\u1edbi n\u01b0\u1edbc"
+  },
+  {
+   "fieldname": "text3",
+   "fieldtype": "Small Text",
+   "label": "H\u01b0\u1edbng d\u1eabn b\u01a1m thu\u1ed1c"
+  },
+  {
+   "fieldname": "text4",
+   "fieldtype": "Small Text",
+   "label": "H\u01b0\u1edbng d\u1eabn thu ho\u1ea1ch"
+  },
+  {
+   "fieldname": "add_guideline",
+   "fieldtype": "Button",
+   "label": "Add guideline"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:16:35.808776",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "Crops v1",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "crop"
+}

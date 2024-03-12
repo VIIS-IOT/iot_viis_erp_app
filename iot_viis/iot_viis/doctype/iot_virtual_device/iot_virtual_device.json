@@ -1,0 +1,180 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:id",
+ "creation": "2023-05-19 13:42:47.708410",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "is_gateway",
+  "serial_number",
+  "device_id_thingsboard",
+  "access_token_thingsboard",
+  "create_time",
+  "description",
+  "additional_info",
+  "customer_id",
+  "device_profile_id",
+  "device_profile",
+  "zone_id",
+  "zone_name",
+  "device_data",
+  "type",
+  "label",
+  "title",
+  "firmware_id",
+  "software_id",
+  "customer_name",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "ID",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_gateway",
+   "fieldtype": "Check",
+   "label": "Is gateway"
+  },
+  {
+   "fieldname": "serial_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Serial Number"
+  },
+  {
+   "fieldname": "device_id_thingsboard",
+   "fieldtype": "Data",
+   "label": "Device ID Thingsboard",
+   "unique": 1
+  },
+  {
+   "fieldname": "access_token_thingsboard",
+   "fieldtype": "Small Text",
+   "label": "Access token Thingsboard"
+  },
+  {
+   "fieldname": "create_time",
+   "fieldtype": "Date",
+   "label": "Create time"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "additional_info",
+   "fieldtype": "JSON",
+   "label": "Additional info"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "Customer ID",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "device_profile_id",
+   "fieldtype": "Link",
+   "label": "Device profile ID",
+   "options": "iot_device_profile"
+  },
+  {
+   "fetch_from": "device_profile_id.label",
+   "fieldname": "device_profile",
+   "fieldtype": "Read Only",
+   "label": "Device profile"
+  },
+  {
+   "fieldname": "zone_id",
+   "fieldtype": "Link",
+   "label": "Zone ID",
+   "options": "iot_zone"
+  },
+  {
+   "fetch_from": "zone_id.label",
+   "fieldname": "zone_name",
+   "fieldtype": "Read Only",
+   "label": "Zone name"
+  },
+  {
+   "fieldname": "device_data",
+   "fieldtype": "JSON",
+   "label": "Device data"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "firmware_id",
+   "fieldtype": "Read Only",
+   "label": "Firmware ID"
+  },
+  {
+   "fieldname": "software_id",
+   "fieldtype": "Read Only",
+   "label": "Software ID"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "in_standard_filter": 1,
+   "label": "Customer name"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:16:01.436151",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_virtual_device",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
