@@ -1,15 +1,15 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:card_number_uuid",
+ "autoname": "field:card_id",
  "creation": "2023-11-04 10:23:05.162685",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "card_number_uuid",
   "card_id",
+  "card_number",
   "card_status",
   "card_type",
   "customer_id"
@@ -34,21 +34,21 @@
    "options": "iot_customer"
   },
   {
-   "fieldname": "card_number_uuid",
-   "fieldtype": "Data",
-   "label": "S\u1ed1 th\u1ebb",
-   "unique": 1
-  },
-  {
    "fieldname": "card_id",
    "fieldtype": "Data",
    "label": "M\u00e3 th\u1ebb",
+   "unique": 1
+  },
+  {
+   "fieldname": "card_number",
+   "fieldtype": "Data",
+   "label": "S\u1ed1 th\u1ebb",
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-04 11:10:21.577909",
+ "modified": "2024-03-08 08:52:03.746377",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_visitor_card",

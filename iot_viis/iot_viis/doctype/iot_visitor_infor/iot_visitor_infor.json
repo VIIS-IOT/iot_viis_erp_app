@@ -26,7 +26,8 @@
   "cb1",
   "passport_img",
   "description",
-  "customer_id"
+  "customer_id",
+  "user_status"
  ],
  "fields": [
   {
@@ -100,12 +101,6 @@
    "label": "\u0110\u1ea1i l\u00fd"
   },
   {
-   "fieldname": "card_id",
-   "fieldtype": "Link",
-   "label": "M\u00e3 th\u1ebb",
-   "options": "iot_visitor_card"
-  },
-  {
    "fieldname": "cb1",
    "fieldtype": "Tab Break",
    "label": "Th\u00f4ng tin th\u00eam"
@@ -125,11 +120,23 @@
    "fieldtype": "Link",
    "label": "IoT Customer",
    "options": "iot_customer"
+  },
+  {
+   "fieldname": "user_status",
+   "fieldtype": "Select",
+   "label": "Tr\u1ea1ng th\u00e1i user",
+   "options": "sync\ncreated\nupdated"
+  },
+  {
+   "fieldname": "card_id",
+   "fieldtype": "Link",
+   "label": "M\u00e3 th\u1ebb",
+   "options": "iot_visitor_card"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-04 10:38:14.108575",
+ "modified": "2024-03-08 08:30:44.142663",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_visitor_infor",
