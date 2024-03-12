@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-05-17 15:07:35.248220",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "column_break_jtx95",
+  "plant_name",
+  "section_break_trbef",
+  "label",
+  "icon",
+  "sort_index",
+  "description",
+  "color",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "iot_plant"
+  },
+  {
+   "fieldname": "column_break_jtx95",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "crops.label",
+   "fieldname": "plant_name",
+   "fieldtype": "Read Only",
+   "label": "Plant name"
+  },
+  {
+   "fieldname": "section_break_trbef",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Attach Image",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "sort_index",
+   "fieldtype": "Int",
+   "label": "Index"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "image_field": "icon",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:14:06.244847",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_plant_guide",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}

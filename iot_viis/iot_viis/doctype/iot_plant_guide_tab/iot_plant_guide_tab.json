@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-05-17 11:29:05.927878",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant",
+  "column_break_tahi1",
+  "plant_name",
+  "section_break_dzsxq",
+  "label",
+  "icon",
+  "index",
+  "color"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "iot_plant"
+  },
+  {
+   "fieldname": "column_break_tahi1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "crops.label",
+   "fieldname": "plant_name",
+   "fieldtype": "Read Only",
+   "label": "Plant name"
+  },
+  {
+   "fieldname": "section_break_dzsxq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Attach Image",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "index",
+   "fieldtype": "Data",
+   "label": "Index"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  }
+ ],
+ "image_field": "icon",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:15:23.818368",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_plant_guide_tab",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}

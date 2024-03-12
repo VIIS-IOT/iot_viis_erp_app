@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-05-17 15:51:43.457911",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant_id",
+  "plant_label",
+  "zone_id",
+  "zone",
+  "image",
+  "label",
+  "description",
+  "square",
+  "start_date",
+  "end_date",
+  "quantity_estimate",
+  "status",
+  "avatar",
+  "is_deleted",
+  "document_links",
+  "location",
+  "images"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant_id",
+   "fieldtype": "Link",
+   "label": "Plant ID",
+   "options": "iot_plant"
+  },
+  {
+   "fetch_from": "plant_id.label",
+   "fieldname": "plant_label",
+   "fieldtype": "Read Only",
+   "label": "Plant "
+  },
+  {
+   "fieldname": "zone_id",
+   "fieldtype": "Link",
+   "label": "Zone ID",
+   "options": "iot_zone"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Read Only",
+   "label": "Zone"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "square",
+   "fieldtype": "Data",
+   "label": "Di\u1ec7n t\u00edch"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End date"
+  },
+  {
+   "fieldname": "quantity_estimate",
+   "fieldtype": "Float",
+   "label": "S\u1ea3n l\u01b0\u1ee3ng d\u1ef1 ki\u1ebfn"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Done\nIn progress"
+  },
+  {
+   "fieldname": "avatar",
+   "fieldtype": "Attach Image",
+   "label": "Avatar"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "Is deleted"
+  },
+  {
+   "fieldname": "document_links",
+   "fieldtype": "Data",
+   "label": "Document links"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Data",
+   "label": "Images"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:11:48.241555",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_crop",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}

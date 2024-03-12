@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "autoname": "hash",
+ "creation": "2023-05-19 13:21:20.487355",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "serial",
+  "model",
+  "device_profile_id",
+  "tb_device_profile_id",
+  "firmware_version",
+  "description",
+  "create_time",
+  "image"
+ ],
+ "fields": [
+  {
+   "fieldname": "serial",
+   "fieldtype": "Data",
+   "label": "Serial"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "device_profile_id",
+   "fieldtype": "Link",
+   "label": "Device profile ID",
+   "options": "iot_device_profile"
+  },
+  {
+   "fieldname": "tb_device_profile_id",
+   "fieldtype": "Data",
+   "label": "Thingsboard Device Profile ID (for OTA)"
+  },
+  {
+   "fetch_from": "device_profile_id.firmware_id",
+   "fieldname": "firmware_version",
+   "fieldtype": "Data",
+   "label": "Firmware Version (for OTA)"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "create_time",
+   "fieldtype": "Date",
+   "label": "Create time"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:14:11.435482",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_physical_device",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "serial"
+}

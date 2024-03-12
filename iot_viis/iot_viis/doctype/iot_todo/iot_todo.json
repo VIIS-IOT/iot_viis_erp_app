@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-06-02 00:47:06.799947",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "farming_plan_task",
+  "crop_name",
+  "task_name",
+  "supplies",
+  "label",
+  "image",
+  "start_date",
+  "end_date",
+  "description",
+  "is_completed",
+  "customer_user_id",
+  "user_first_name",
+  "user_last_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "farming_plan_task",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Farming plan - Task",
+   "options": "iot_farming_plan_task"
+  },
+  {
+   "fetch_from": "farming_plan_task.crop_name",
+   "fetch_if_empty": 1,
+   "fieldname": "crop_name",
+   "fieldtype": "Read Only",
+   "label": "Crop name"
+  },
+  {
+   "fetch_from": "farming_plan_task.label",
+   "fieldname": "task_name",
+   "fieldtype": "Read Only",
+   "label": "Task name"
+  },
+  {
+   "fetch_from": "farming_plan_task.supplies",
+   "fetch_if_empty": 1,
+   "fieldname": "supplies",
+   "fieldtype": "Read Only",
+   "label": "Supplies "
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "Start date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "End date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_completed",
+   "fieldtype": "Check",
+   "label": "Is done"
+  },
+  {
+   "fieldname": "customer_user_id",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "iot_customer_user"
+  },
+  {
+   "fetch_from": "customer_user_id.first_name",
+   "fieldname": "user_first_name",
+   "fieldtype": "Data",
+   "label": "Employee first name"
+  },
+  {
+   "fetch_from": "customer_user_id.last_name",
+   "fieldname": "user_last_name",
+   "fieldtype": "Data",
+   "label": "Employee last name"
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:12:04.022021",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_todo",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "task_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "Plan"
+  },
+  {
+   "color": "Green",
+   "title": "Done"
+  },
+  {
+   "color": "Yellow",
+   "title": "In progress"
+  },
+  {
+   "color": "Red",
+   "title": "Pending"
+  }
+ ],
+ "title_field": "label"
+}

@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2023-05-17 09:28:02.792111",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plant_id",
+  "column_break_zsnml",
+  "plant_name",
+  "section_break_7esel",
+  "label",
+  "icon",
+  "image",
+  "sort_index",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "plant_id",
+   "fieldtype": "Link",
+   "label": "Plant",
+   "options": "iot_plant"
+  },
+  {
+   "fieldname": "column_break_zsnml",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "plant_id.label",
+   "fieldname": "plant_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Plant name"
+  },
+  {
+   "fieldname": "section_break_7esel",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "Label"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Attach Image",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "sort_index",
+   "fieldtype": "Int",
+   "label": "Index"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Description"
+  }
+ ],
+ "image_field": "icon",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-12 09:15:17.753123",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_plant_information_tab",
+ "name_case": "Title Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}
