@@ -13,7 +13,8 @@
   "note",
   "image",
   "crop_name",
-  "enable_origin_tracing"
+  "enable_origin_tracing",
+  "iot_customer_user"
  ],
  "fields": [
   {
@@ -48,11 +49,17 @@
    "fieldname": "enable_origin_tracing",
    "fieldtype": "Check",
    "label": "Enable origin tracing"
+  },
+  {
+   "fieldname": "iot_customer_user",
+   "fieldtype": "Link",
+   "label": "iot_customer_user",
+   "options": "iot_customer_user"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:13:39.840396",
+ "modified": "2024-05-27 08:38:42.488503",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_Crop_note",

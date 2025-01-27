@@ -1,5 +1,4 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
@@ -26,6 +25,14 @@
   "data_measure_min",
   "data_eligible_max",
   "data_eligible_min",
+  "checkbox_bit_label1",
+  "checkbox_bit_label2",
+  "checkbox_bit_label3",
+  "checkbox_bit_label4",
+  "checkbox_bit_label5",
+  "checkbox_bit_label6",
+  "checkbox_bit_label7",
+  "checkbox_bit_label8",
   "chart_type",
   "round_type",
   "md_size",
@@ -53,7 +60,7 @@
    "fieldname": "data_type",
    "fieldtype": "Select",
    "label": "Data type",
-   "options": "Bool\nValue\nEnum\nRaw\nString\nGroup Break\nTab Break\nIP"
+   "options": "Bool\nValue\nEnum\nRaw\nString\nGroup Break\nTab Break\nIP\nCheckbox-bit"
   },
   {
    "fieldname": "icon_url",
@@ -144,11 +151,51 @@
    "fieldname": "index_sort",
    "fieldtype": "Int",
    "label": "Index Sort"
+  },
+  {
+   "fieldname": "checkbox_bit_label1",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label1"
+  },
+  {
+   "fieldname": "checkbox_bit_label2",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label2"
+  },
+  {
+   "fieldname": "checkbox_bit_label3",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label3"
+  },
+  {
+   "fieldname": "checkbox_bit_label4",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label4"
+  },
+  {
+   "fieldname": "checkbox_bit_label5",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label5"
+  },
+  {
+   "fieldname": "checkbox_bit_label6",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label6"
+  },
+  {
+   "fieldname": "checkbox_bit_label7",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label7"
+  },
+  {
+   "fieldname": "checkbox_bit_label8",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label8"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:12:20.118756",
+ "modified": "2024-06-18 15:46:30.854741",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_production_function",

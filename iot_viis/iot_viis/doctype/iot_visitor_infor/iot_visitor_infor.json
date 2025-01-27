@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{shareholder}-{agency}-{customer_order}",
+ "autoname": "format:{fullname}-{customer_order}",
  "creation": "2023-11-04 10:20:11.745544",
  "default_view": "List",
  "doctype": "DocType",
@@ -27,7 +27,8 @@
   "passport_img",
   "description",
   "customer_id",
-  "user_status"
+  "user_status",
+  "location"
  ],
  "fields": [
   {
@@ -124,19 +125,27 @@
   {
    "fieldname": "user_status",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Tr\u1ea1ng th\u00e1i user",
-   "options": "sync\ncreated\nupdated"
+   "options": "sync\ncreated\nupdated\ndeleted"
   },
   {
    "fieldname": "card_id",
    "fieldtype": "Link",
    "label": "M\u00e3 th\u1ebb",
    "options": "iot_visitor_card"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-08 08:30:44.142663",
+ "modified": "2024-04-03 14:32:02.199863",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_visitor_infor",

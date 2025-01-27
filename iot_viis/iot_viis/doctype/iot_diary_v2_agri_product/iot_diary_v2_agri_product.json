@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-06-03 10:40:01.997875",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "avatar",
+  "qr",
+  "label",
+  "packing_unit",
+  "unit",
+  "net_weight",
+  "image",
+  "link",
+  "description",
+  "expire_time",
+  "expire_time_unit",
+  "instruction",
+  "note",
+  "iot_customer",
+  "is_deleted"
+ ],
+ "fields": [
+  {
+   "fieldname": "avatar",
+   "fieldtype": "Attach Image",
+   "label": "avatar"
+  },
+  {
+   "fieldname": "qr",
+   "fieldtype": "Attach Image",
+   "label": "qr"
+  },
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "label"
+  },
+  {
+   "fieldname": "packing_unit",
+   "fieldtype": "Link",
+   "label": "packing_unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "unit",
+   "fieldtype": "Link",
+   "label": "unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "net_weight",
+   "fieldtype": "Int",
+   "label": "net_weight"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Long Text",
+   "label": "image"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Long Text",
+   "label": "link"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "expire_time",
+   "fieldtype": "Int",
+   "label": "expire_time"
+  },
+  {
+   "fieldname": "expire_time_unit",
+   "fieldtype": "Select",
+   "label": "expire_time_unit",
+   "options": "minute\nday\nweek\nmonth\nyear"
+  },
+  {
+   "fieldname": "instruction",
+   "fieldtype": "Long Text",
+   "label": "instruction"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "note"
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "is_deleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-04 09:01:51.115338",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_diary_v2_agri_product",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

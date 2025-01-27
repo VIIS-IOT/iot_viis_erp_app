@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-08-01 13:57:55.667481",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "is_synced",
+  "is_from_local",
+  "iot_schedule",
+  "details",
+  "error_message",
+  "operation",
+  "status"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_synced",
+   "fieldtype": "Check",
+   "label": "is_synced"
+  },
+  {
+   "fieldname": "iot_schedule",
+   "fieldtype": "Data",
+   "label": "iot_schedule"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_from_local",
+   "fieldtype": "Check",
+   "label": "is_from_local"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Long Text",
+   "label": "details"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Data",
+   "label": "error_message"
+  },
+  {
+   "fieldname": "operation",
+   "fieldtype": "Select",
+   "label": "operation",
+   "options": "sync_up\nsync_down\nresync"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "success\nfailure"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-05 21:37:43.086637",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_schedule_sync_log",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "autoname": "format:{item_id}-{task_id}",
+ "creation": "2024-05-30 16:30:13.650441",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "quantity",
+  "description",
+  "task_id",
+  "item_id",
+  "is_deleted",
+  "iot_customer",
+  "uom_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "S\u1ed1 l\u01b0\u1ee3ng th\u1ef1c"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Task Id",
+   "options": "iot_diary_v2_task"
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Link",
+   "label": "V\u1eadt t\u01b0 s\u1eed d\u1ee5ng",
+   "options": "Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "is_deleted"
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "uom_id",
+   "fieldtype": "Link",
+   "label": "uom_id",
+   "options": "UOM"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-07 09:55:51.568004",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_diary_v2_item",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

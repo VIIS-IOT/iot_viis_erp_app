@@ -22,13 +22,22 @@
   "data_measure_min",
   "data_eligible_max",
   "data_eligible_min",
+  "checkbox_bit_label1",
+  "checkbox_bit_label2",
+  "checkbox_bit_label3",
+  "checkbox_bit_label4",
+  "checkbox_bit_label5",
+  "checkbox_bit_label6",
+  "checkbox_bit_label7",
+  "checkbox_bit_label8",
   "chart_type",
   "round_type",
   "md_size",
   "show_chart",
   "index_sort",
   "iot_device",
-  "iot_production_function"
+  "iot_production_function",
+  "is_hidden"
  ],
  "fields": [
   {
@@ -147,11 +156,57 @@
    "fieldtype": "Link",
    "label": "Iot Production Function",
    "options": "iot_production_function"
+  },
+  {
+   "fieldname": "checkbox_bit_label1",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label1"
+  },
+  {
+   "fieldname": "checkbox_bit_label2",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label2"
+  },
+  {
+   "fieldname": "checkbox_bit_label3",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label3"
+  },
+  {
+   "fieldname": "checkbox_bit_label4",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label4"
+  },
+  {
+   "fieldname": "checkbox_bit_label5",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label5"
+  },
+  {
+   "fieldname": "checkbox_bit_label6",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label6"
+  },
+  {
+   "fieldname": "checkbox_bit_label7",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label7"
+  },
+  {
+   "fieldname": "checkbox_bit_label8",
+   "fieldtype": "Data",
+   "label": "checkbox_bit_label8"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_hidden",
+   "fieldtype": "Check",
+   "label": "is_hidden"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-09-14 09:33:09.541209",
+ "modified": "2024-06-28 07:59:08.771459",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_function_custom_setting",

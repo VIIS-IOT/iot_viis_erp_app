@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{iot_customer}-{workshift_code}",
+ "creation": "2024-06-29 15:05:22.987759",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "workshift_code",
+  "allowed_lates_earlys",
+  "start_time",
+  "end_time",
+  "iot_customer",
+  "is_deleted",
+  "working_hours_start_time",
+  "working_hours_end_time",
+  "working_hours_duration",
+  "rest_start_time",
+  "rest_end_time",
+  "exclude_working_time",
+  "overtime_before",
+  "overtime_after",
+  "overtime_before_start_time",
+  "overtime_before_end_time",
+  "overtime_before_duration",
+  "overtime_after_start_time",
+  "overtime_after_end_time",
+  "overtime_after_duration",
+  "employees",
+  "approver_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "label"
+  },
+  {
+   "fieldname": "workshift_code",
+   "fieldtype": "Data",
+   "label": "workshift_code"
+  },
+  {
+   "fieldname": "allowed_lates_earlys",
+   "fieldtype": "Int",
+   "label": "allowed_lates_earlys"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "start_time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "end_time"
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "is_deleted"
+  },
+  {
+   "fieldname": "working_hours_start_time",
+   "fieldtype": "Time",
+   "label": "working_hours_start_time"
+  },
+  {
+   "fieldname": "working_hours_end_time",
+   "fieldtype": "Time",
+   "label": "working_hours_end_time"
+  },
+  {
+   "fieldname": "working_hours_duration",
+   "fieldtype": "Float",
+   "label": "working_hours_duration"
+  },
+  {
+   "fieldname": "rest_start_time",
+   "fieldtype": "Time",
+   "label": "rest_start_time"
+  },
+  {
+   "fieldname": "rest_end_time",
+   "fieldtype": "Time",
+   "label": "rest_end_time"
+  },
+  {
+   "default": "0",
+   "fieldname": "exclude_working_time",
+   "fieldtype": "Check",
+   "label": "exclude_working_time"
+  },
+  {
+   "default": "0",
+   "fieldname": "overtime_before",
+   "fieldtype": "Check",
+   "label": "overtime_before"
+  },
+  {
+   "default": "0",
+   "fieldname": "overtime_after",
+   "fieldtype": "Check",
+   "label": "overtime_after"
+  },
+  {
+   "fieldname": "overtime_before_start_time",
+   "fieldtype": "Time",
+   "label": "overtime_before_start_time"
+  },
+  {
+   "fieldname": "overtime_before_end_time",
+   "fieldtype": "Time",
+   "label": "overtime_before_end_time"
+  },
+  {
+   "fieldname": "overtime_before_duration",
+   "fieldtype": "Float",
+   "label": "overtime_before_duration"
+  },
+  {
+   "fieldname": "overtime_after_start_time",
+   "fieldtype": "Time",
+   "label": "overtime_after_start_time"
+  },
+  {
+   "fieldname": "overtime_after_end_time",
+   "fieldtype": "Time",
+   "label": "overtime_after_end_time"
+  },
+  {
+   "fieldname": "overtime_after_duration",
+   "fieldtype": "Float",
+   "label": "overtime_after_duration"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Data",
+   "label": "employees"
+  },
+  {
+   "fieldname": "approver_id",
+   "fieldtype": "Link",
+   "label": "approver_id",
+   "options": "iot_customer_user"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 08:49:03.457032",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_workshift",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

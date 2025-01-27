@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-07-12 09:37:01.753185",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "api_key",
+  "endpoint_url",
+  "is_active",
+  "iot_customer",
+  "auth_type",
+  "auth_token",
+  "auth_username",
+  "auth_password",
+  "auth_cookie",
+  "emqx_webhook_id",
+  "emqx_rule_id",
+  "emqx_mqtt_mux_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Link",
+   "label": "api_key ",
+   "options": "iot_api_keys"
+  },
+  {
+   "fieldname": "endpoint_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "endpoint_url",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "is_active"
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer",
+   "unique": 1
+  },
+  {
+   "fieldname": "auth_type",
+   "fieldtype": "Select",
+   "label": "auth_type",
+   "options": "\njwt\nbasic\ncookie"
+  },
+  {
+   "fieldname": "auth_token",
+   "fieldtype": "Long Text",
+   "label": "auth_token"
+  },
+  {
+   "fieldname": "auth_username",
+   "fieldtype": "Data",
+   "label": "auth_username"
+  },
+  {
+   "fieldname": "auth_password",
+   "fieldtype": "Data",
+   "label": "auth_password"
+  },
+  {
+   "fieldname": "auth_cookie",
+   "fieldtype": "Data",
+   "label": "auth_cookie"
+  },
+  {
+   "fieldname": "emqx_webhook_id",
+   "fieldtype": "Data",
+   "label": "emqx_webhook_id"
+  },
+  {
+   "fieldname": "emqx_rule_id",
+   "fieldtype": "Data",
+   "label": "emqx_rule_id"
+  },
+  {
+   "fieldname": "emqx_mqtt_mux_id",
+   "fieldtype": "Data",
+   "label": "emqx_mqtt_mux_id"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-22 16:08:41.337614",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_integration_endpoints",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

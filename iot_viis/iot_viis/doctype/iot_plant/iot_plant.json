@@ -28,7 +28,7 @@
    "fieldname": "type",
    "fieldtype": "Select",
    "label": "Type",
-   "options": "Ref\nUser owner"
+   "options": "Ref\nUser owner\nCommon doc"
   },
   {
    "depends_on": "eval:doc.type == \"User owner\"",
@@ -45,7 +45,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:13:50.437648",
+ "modified": "2024-05-02 14:45:17.990623",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_plant",

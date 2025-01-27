@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-08-28 16:40:47.759250",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "user_id",
+  "request_date",
+  "approval_date",
+  "leave_type",
+  "leave_date",
+  "leave_duration",
+  "approver_id",
+  "approval_status",
+  "request_comment",
+  "reply_comment",
+  "customer_id",
+  "cancel_reason",
+  "canceled_date",
+  "reason_for_change",
+  "change_date",
+  "modified_by_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "user_id",
+   "fieldtype": "Link",
+   "label": "user_id",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Datetime",
+   "label": "request_date"
+  },
+  {
+   "fieldname": "approval_date",
+   "fieldtype": "Datetime",
+   "label": "approval_date"
+  },
+  {
+   "fieldname": "leave_type",
+   "fieldtype": "Select",
+   "label": "leave_type",
+   "options": "annual_leave\nunpaid_leave\nmaternity_leave"
+  },
+  {
+   "fieldname": "leave_date",
+   "fieldtype": "Date",
+   "label": "leave_date"
+  },
+  {
+   "fieldname": "leave_duration",
+   "fieldtype": "Select",
+   "label": "leave_duration",
+   "options": "full_day\nmorning\nafternoon"
+  },
+  {
+   "fieldname": "approver_id",
+   "fieldtype": "Link",
+   "label": "approver_id",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "approval_status",
+   "fieldtype": "Select",
+   "label": "approval_status",
+   "options": "Approved\nProcessing\nDeny\nCanceled"
+  },
+  {
+   "fieldname": "request_comment",
+   "fieldtype": "Data",
+   "label": "request_comment"
+  },
+  {
+   "fieldname": "reply_comment",
+   "fieldtype": "Data",
+   "label": "reply_comment"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "customer_id",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "cancel_reason",
+   "fieldtype": "Data",
+   "label": "cancel_reason"
+  },
+  {
+   "fieldname": "canceled_date",
+   "fieldtype": "Datetime",
+   "label": "canceled_date"
+  },
+  {
+   "fieldname": "reason_for_change",
+   "fieldtype": "Data",
+   "label": "reason_for_change"
+  },
+  {
+   "fieldname": "change_date",
+   "fieldtype": "Datetime",
+   "label": "change_date"
+  },
+  {
+   "fieldname": "modified_by_user",
+   "fieldtype": "Link",
+   "label": "modified_by_user",
+   "options": "iot_customer_user"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-28 16:40:47.759250",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_leave_request",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -10,6 +10,7 @@
  "field_order": [
   "crop_owner",
   "crop_id",
+  "project_id",
   "location",
   "longitude",
   "latitude",
@@ -27,7 +28,8 @@
    "fieldname": "crop_id",
    "fieldtype": "Link",
    "label": "Crop id",
-   "options": "iot_crop"
+   "options": "iot_crop",
+   "unique": 1
   },
   {
    "fieldname": "crop_owner",
@@ -88,11 +90,18 @@
    "fieldname": "business_avatar",
    "fieldtype": "Attach Image",
    "label": "business_avatar"
+  },
+  {
+   "fieldname": "project_id",
+   "fieldtype": "Link",
+   "label": "project_id",
+   "options": "iot_project",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-05 11:17:04.696717",
+ "modified": "2024-05-04 11:52:03.992790",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_crop_diary",

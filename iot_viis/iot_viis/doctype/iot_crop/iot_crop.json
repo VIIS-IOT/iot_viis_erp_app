@@ -20,6 +20,7 @@
   "end_date",
   "quantity_estimate",
   "status",
+  "is_template",
   "avatar",
   "is_deleted",
   "document_links",
@@ -116,12 +117,18 @@
    "fieldname": "images",
    "fieldtype": "Data",
    "label": "Images"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_template",
+   "fieldtype": "Check",
+   "label": "is_template"
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:11:48.241555",
+ "modified": "2024-06-27 08:58:52.552228",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_crop",

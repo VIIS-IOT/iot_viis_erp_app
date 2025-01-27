@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-05-13 15:28:19.908689",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "status",
+  "crop_id",
+  "creator_id",
+  "image",
+  "description",
+  "customer_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "label"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status ",
+   "options": "Open\nIn Progress\nResolved\nClosed\nOn Hold\nRejected\nReopened"
+  },
+  {
+   "fieldname": "crop_id",
+   "fieldtype": "Link",
+   "label": "crop_id ",
+   "options": "iot_crop"
+  },
+  {
+   "fieldname": "creator_id",
+   "fieldtype": "Link",
+   "label": "creator_id",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Long Text",
+   "label": "image"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "customer_id",
+   "fieldtype": "Link",
+   "label": "customer_id",
+   "options": "iot_customer"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-14 09:03:46.650553",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_ticket",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

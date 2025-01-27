@@ -1,0 +1,78 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-05-03 11:14:07.012877",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "feature_name",
+  "package_id",
+  "quota",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "label"
+  },
+  {
+   "fieldname": "package_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "package_id",
+   "options": "iot_payment_packages",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quota",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "quota",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "feature_name",
+   "fieldtype": "Data",
+   "label": "feature_name",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-05 15:23:36.589222",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_package_features",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "label"
+}

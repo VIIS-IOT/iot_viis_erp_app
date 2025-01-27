@@ -19,7 +19,16 @@
   "out_long",
   "work_time",
   "in_image",
-  "out_image"
+  "out_image",
+  "status",
+  "user_in_workshift",
+  "is_overtime_after",
+  "is_overtime_before",
+  "work_duration_main",
+  "work_duration_overtime_before",
+  "work_duration_overtime_after",
+  "late_duration",
+  "early_leave_duration"
  ],
  "fields": [
   {
@@ -102,11 +111,60 @@
    "fieldname": "out_image",
    "fieldtype": "Attach Image",
    "label": "Check out Image"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "approved\nlate_early"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_overtime_after",
+   "fieldtype": "Check",
+   "label": "is_overtime_after"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_overtime_before",
+   "fieldtype": "Check",
+   "label": "is_overtime_before"
+  },
+  {
+   "fieldname": "work_duration_main",
+   "fieldtype": "Float",
+   "label": "work_duration_main"
+  },
+  {
+   "fieldname": "work_duration_overtime_before",
+   "fieldtype": "Float",
+   "label": "work_duration_overtime_before"
+  },
+  {
+   "fieldname": "work_duration_overtime_after",
+   "fieldtype": "Float",
+   "label": "work_duration_overtime_after"
+  },
+  {
+   "fieldname": "late_duration",
+   "fieldtype": "Float",
+   "label": "late_duration"
+  },
+  {
+   "fieldname": "early_leave_duration",
+   "fieldtype": "Float",
+   "label": "early_leave_duration"
+  },
+  {
+   "fieldname": "user_in_workshift",
+   "fieldtype": "Link",
+   "label": "user_in_workshift",
+   "options": "iot_user_in_workshift"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-26 14:10:47.434461",
+ "modified": "2024-07-16 16:51:17.295383",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_timesheet",

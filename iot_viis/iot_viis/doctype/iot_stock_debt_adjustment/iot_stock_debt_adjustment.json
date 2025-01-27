@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-10-18 09:00:06.782252",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "voucher_type",
+  "voucher_id",
+  "party_type",
+  "party_id",
+  "adjustment_date",
+  "adjustment_amount",
+  "old_paid_amount",
+  "adjust_discount",
+  "description",
+  "iot_customer",
+  "iot_customer_user"
+ ],
+ "fields": [
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Select",
+   "label": "voucher_type",
+   "options": "Purchase Receipt\nDelivery Note"
+  },
+  {
+   "fieldname": "voucher_id",
+   "fieldtype": "Data",
+   "label": "voucher_id"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "party_type",
+   "options": "Supplier\nCustomer"
+  },
+  {
+   "fieldname": "party_id",
+   "fieldtype": "Data",
+   "label": "party_id"
+  },
+  {
+   "fieldname": "adjustment_date",
+   "fieldtype": "Date",
+   "label": "adjustment_date"
+  },
+  {
+   "fieldname": "adjustment_amount",
+   "fieldtype": "Currency",
+   "label": "adjustment_amount"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "iot_customer_user",
+   "fieldtype": "Link",
+   "label": "iot_customer_user",
+   "options": "iot_customer_user"
+  },
+  {
+   "fieldname": "adjust_discount",
+   "fieldtype": "Currency",
+   "label": "adjust_discount"
+  },
+  {
+   "fieldname": "old_paid_amount",
+   "fieldtype": "Currency",
+   "label": "old_paid_amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-26 12:01:33.337406",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_stock_debt_adjustment",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

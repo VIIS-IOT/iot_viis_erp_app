@@ -15,7 +15,8 @@
   "firmware_version",
   "description",
   "create_time",
-  "image"
+  "image",
+  "pairing_key"
  ],
  "fields": [
   {
@@ -26,6 +27,7 @@
   {
    "fieldname": "model",
    "fieldtype": "Data",
+   "in_standard_filter": 1,
    "label": "Model"
   },
   {
@@ -59,12 +61,18 @@
    "fieldname": "image",
    "fieldtype": "Attach Image",
    "label": "Image"
+  },
+  {
+   "default": "pairing_key",
+   "fieldname": "pairing_key",
+   "fieldtype": "Data",
+   "label": "Pairing Key"
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:14:11.435482",
+ "modified": "2025-01-17 12:07:26.861476",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_physical_device",

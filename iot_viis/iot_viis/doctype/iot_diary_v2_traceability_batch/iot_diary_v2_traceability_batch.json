@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{batch_code}-{iot_customer}",
+ "creation": "2024-06-03 16:37:59.498520",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "batch_code",
+  "start_number",
+  "end_number",
+  "zone",
+  "agri_process_id",
+  "business_info_id",
+  "product_id",
+  "quantity",
+  "production_date",
+  "expiration_date",
+  "shelf_life",
+  "iot_customer",
+  "is_deleted",
+  "token"
+ ],
+ "fields": [
+  {
+   "fieldname": "batch_code",
+   "fieldtype": "Data",
+   "label": "batch_code"
+  },
+  {
+   "fieldname": "start_number",
+   "fieldtype": "Int",
+   "label": "start_number"
+  },
+  {
+   "fieldname": "end_number",
+   "fieldtype": "Int",
+   "label": "end_number"
+  },
+  {
+   "fieldname": "zone",
+   "fieldtype": "Data",
+   "label": "zone"
+  },
+  {
+   "fieldname": "agri_process_id",
+   "fieldtype": "Link",
+   "label": "agri_process_id",
+   "options": "iot_diary_v2_agri_process"
+  },
+  {
+   "fieldname": "business_info_id",
+   "fieldtype": "Link",
+   "label": "business_info_id",
+   "options": "iot_diary_v2_business"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Link",
+   "label": "product_id",
+   "options": "iot_diary_v2_agri_product"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "quantity"
+  },
+  {
+   "fieldname": "production_date",
+   "fieldtype": "Date",
+   "label": "production_date"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Date",
+   "label": "expiration_date"
+  },
+  {
+   "fieldname": "shelf_life",
+   "fieldtype": "Data",
+   "label": "shelf_life"
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "is_deleted"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Long Text",
+   "label": "token"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-19 15:51:53.764323",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_diary_v2_traceability_batch",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

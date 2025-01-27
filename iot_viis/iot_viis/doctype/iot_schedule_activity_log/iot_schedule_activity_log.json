@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-08-16 08:46:28.626402",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "is_synced",
+  "is_from_local",
+  "iot_schedule",
+  "details",
+  "error_message",
+  "err_code",
+  "type",
+  "severity",
+  "acknowledged"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "is_synced",
+   "fieldtype": "Check",
+   "label": "is_synced"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_from_local",
+   "fieldtype": "Check",
+   "label": "is_from_local"
+  },
+  {
+   "fieldname": "iot_schedule",
+   "fieldtype": "Link",
+   "label": "iot_schedule",
+   "options": "iot_schedule"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Long Text",
+   "label": "details"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Data",
+   "label": "error_message"
+  },
+  {
+   "fieldname": "err_code",
+   "fieldtype": "Data",
+   "label": "err_code"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "severity",
+   "options": "low\nmedium\nhigh\ncritical"
+  },
+  {
+   "default": "0",
+   "fieldname": "acknowledged",
+   "fieldtype": "Check",
+   "label": "acknowledged"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "type",
+   "options": "error\nwarning"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-16 09:13:39.093702",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_schedule_activity_log",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

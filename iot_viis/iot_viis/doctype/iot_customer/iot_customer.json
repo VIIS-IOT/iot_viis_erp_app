@@ -1,5 +1,4 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
@@ -22,7 +21,11 @@
   "zip_code",
   "logo",
   "district",
-  "ward"
+  "ward",
+  "type",
+  "developer_mode",
+  "is_receive_connection_noti",
+  "is_receive_notification_noti"
  ],
  "fields": [
   {
@@ -43,7 +46,8 @@
   {
    "fieldname": "phone",
    "fieldtype": "Data",
-   "label": "Phone"
+   "label": "Phone",
+   "unique": 1
   },
   {
    "fieldname": "description",
@@ -89,11 +93,35 @@
    "fieldname": "ward",
    "fieldtype": "Data",
    "label": "Ward"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "type",
+   "options": "group\nindividual"
+  },
+  {
+   "default": "0",
+   "fieldname": "developer_mode",
+   "fieldtype": "Check",
+   "label": "developer_mode"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_receive_connection_noti",
+   "fieldtype": "Check",
+   "label": "is_receive_connection_noti"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_receive_notification_noti",
+   "fieldtype": "Check",
+   "label": "is_receive_notification_noti"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:09:18.565194",
+ "modified": "2024-11-27 12:11:28.907503",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_customer",

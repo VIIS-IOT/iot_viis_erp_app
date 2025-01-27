@@ -1,5 +1,4 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_rename": 1,
  "autoname": "hash",
@@ -83,7 +82,9 @@
   {
    "fieldname": "phone_number",
    "fieldtype": "Data",
-   "label": "Phone Number"
+   "label": "Phone Number",
+   "reqd": 1,
+   "unique": 1
   },
   {
    "fieldname": "address",
@@ -162,7 +163,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:10:32.637813",
+ "modified": "2024-05-02 15:06:54.497338",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_customer_user",

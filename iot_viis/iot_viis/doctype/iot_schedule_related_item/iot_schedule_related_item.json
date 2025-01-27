@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2024-09-27 15:48:47.380336",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "iot_category_id",
+  "description",
+  "quantity",
+  "exp_quantity",
+  "loss_quantity",
+  "issued_quantity",
+  "schedule_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "iot_category_id",
+   "fieldtype": "Link",
+   "label": "V\u1eadt t\u01b0 s\u1eed d\u1ee5ng",
+   "options": "Item"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "S\u1ed1 l\u01b0\u1ee3ng th\u1ef1c"
+  },
+  {
+   "fieldname": "exp_quantity",
+   "fieldtype": "Float",
+   "label": "S\u1ed1 l\u01b0\u1ee3ng d\u1ef1 ki\u1ebfn"
+  },
+  {
+   "fieldname": "loss_quantity",
+   "fieldtype": "Float",
+   "label": "Hao hut/h\u01b0 h\u1ecfng"
+  },
+  {
+   "fieldname": "issued_quantity",
+   "fieldtype": "Float",
+   "label": "V\u1eadt t\u01b0 ti\u00eau hao"
+  },
+  {
+   "fieldname": "schedule_id",
+   "fieldtype": "Link",
+   "label": "Ch\u01b0\u01a1ng tr\u00ecnh",
+   "options": "iot_schedule"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-27 15:51:53.068720",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_schedule_related_item",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

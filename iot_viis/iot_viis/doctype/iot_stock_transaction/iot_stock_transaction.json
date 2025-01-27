@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-06-06 09:28:57.263753",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "voucher_type",
+  "voucher_id",
+  "party_type",
+  "party_id",
+  "transaction_date",
+  "voucher_amount",
+  "add_taxes",
+  "other_charges",
+  "discount",
+  "total_amount",
+  "paid_amount",
+  "outstanding_amount",
+  "iot_customer",
+  "description",
+  "status"
+ ],
+ "fields": [
+  {
+   "fieldname": "voucher_type",
+   "fieldtype": "Select",
+   "label": "voucher_type",
+   "options": "Purchase Receipt\nDelivery Note"
+  },
+  {
+   "fieldname": "voucher_id",
+   "fieldtype": "Data",
+   "label": "voucher_id",
+   "unique": 1
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Select",
+   "label": "party_type",
+   "options": "Supplier\nCustomer"
+  },
+  {
+   "fieldname": "party_id",
+   "fieldtype": "Data",
+   "label": "party_id"
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "transaction_date"
+  },
+  {
+   "fieldname": "other_charges",
+   "fieldtype": "Currency",
+   "label": "other_charges"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "total_amount"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "paid_amount"
+  },
+  {
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "outstanding_amount  "
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer"
+  },
+  {
+   "fieldname": "voucher_amount",
+   "fieldtype": "Currency",
+   "label": "voucher_amount"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description"
+  },
+  {
+   "fieldname": "add_taxes",
+   "fieldtype": "Currency",
+   "label": "add_taxes"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "discount"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "\ndraft\nsubmitted\ncancelled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-11-22 10:21:01.058686",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_stock_transaction",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

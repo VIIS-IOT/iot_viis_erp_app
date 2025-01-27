@@ -13,9 +13,12 @@
   "message",
   "created_at",
   "entity",
+  "entity_label",
   "type",
+  "err_code",
   "is_read",
-  "is_sent"
+  "is_sent",
+  "severity"
  ],
  "fields": [
   {
@@ -25,7 +28,7 @@
   },
   {
    "fieldname": "message",
-   "fieldtype": "Data",
+   "fieldtype": "Long Text",
    "label": "Message"
   },
   {
@@ -40,8 +43,9 @@
   },
   {
    "fieldname": "type",
-   "fieldtype": "Data",
-   "label": "Type"
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\napproval response\ntask\ndevice\ntimesheet\napproval request\novertime request\novertime response\ndevice_error"
   },
   {
    "default": "0",
@@ -59,11 +63,27 @@
    "fieldname": "customer_id",
    "fieldtype": "Data",
    "label": "IoT Customer Id"
+  },
+  {
+   "fieldname": "err_code",
+   "fieldtype": "Data",
+   "label": "err_code"
+  },
+  {
+   "fieldname": "entity_label",
+   "fieldtype": "Data",
+   "label": "entity_label"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "severity",
+   "options": "alarm\nerror\nnotification"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-23 15:14:20.994410",
+ "modified": "2024-09-22 18:03:25.209729",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_notification",

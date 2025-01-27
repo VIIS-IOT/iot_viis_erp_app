@@ -1,0 +1,66 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-05-03 11:15:33.948517",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "package_feature_id",
+  "customer_subscription",
+  "usage"
+ ],
+ "fields": [
+  {
+   "fieldname": "package_feature_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "package_feature_id",
+   "options": "iot_package_features",
+   "reqd": 1
+  },
+  {
+   "fieldname": "usage",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "usage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_subscription",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "customer_subscription",
+   "options": "iot_customer_subscriptions",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-05-04 16:40:58.104763",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_user_features_usage",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

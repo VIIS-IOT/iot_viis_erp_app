@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-06-03 15:57:21.672263",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "label",
+  "business_code",
+  "avatar",
+  "qr",
+  "phone",
+  "email",
+  "nation",
+  "province",
+  "district",
+  "ward",
+  "address",
+  "image",
+  "link",
+  "description",
+  "iot_customer",
+  "is_deleted"
+ ],
+ "fields": [
+  {
+   "fieldname": "label",
+   "fieldtype": "Data",
+   "label": "label"
+  },
+  {
+   "fieldname": "business_code",
+   "fieldtype": "Data",
+   "label": "business_code"
+  },
+  {
+   "fieldname": "avatar",
+   "fieldtype": "Long Text",
+   "label": "avatar"
+  },
+  {
+   "fieldname": "qr",
+   "fieldtype": "Data",
+   "label": "qr"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email"
+  },
+  {
+   "fieldname": "nation",
+   "fieldtype": "Data",
+   "label": "nation"
+  },
+  {
+   "fieldname": "province",
+   "fieldtype": "Data",
+   "label": "province"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "district"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Data",
+   "label": "ward"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "address"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Long Text",
+   "label": "image"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Small Text",
+   "label": "link"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "label": "description"
+  },
+  {
+   "fieldname": "iot_customer",
+   "fieldtype": "Link",
+   "label": "iot_customer",
+   "options": "iot_customer"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "is_deleted"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-05 18:09:08.527770",
+ "modified_by": "Administrator",
+ "module": "Iot Viis",
+ "name": "iot_diary_v2_business",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

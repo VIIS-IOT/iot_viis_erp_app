@@ -12,7 +12,13 @@
   "task_id",
   "product_id",
   "exp_quantity",
-  "lost_quantity"
+  "lost_quantity",
+  "finished_quantity",
+  "issued_quantity",
+  "total_qty_in_crop",
+  "draft_quantity",
+  "active_uom",
+  "active_conversion_factor"
  ],
  "fields": [
   {
@@ -38,7 +44,7 @@
    "fieldname": "product_id",
    "fieldtype": "Link",
    "label": "product",
-   "options": "iot_agriculture_product"
+   "options": "Item"
   },
   {
    "fieldname": "exp_quantity",
@@ -49,11 +55,42 @@
    "fieldname": "lost_quantity",
    "fieldtype": "Float",
    "label": "lost quantity"
+  },
+  {
+   "fieldname": "finished_quantity",
+   "fieldtype": "Float",
+   "label": "finished quantity"
+  },
+  {
+   "fieldname": "issued_quantity",
+   "fieldtype": "Float",
+   "label": "issued quantity"
+  },
+  {
+   "fieldname": "total_qty_in_crop",
+   "fieldtype": "Float",
+   "label": "total_qty_in_crop"
+  },
+  {
+   "fieldname": "draft_quantity",
+   "fieldtype": "Float",
+   "label": "draft_quantity"
+  },
+  {
+   "fieldname": "active_uom",
+   "fieldtype": "Link",
+   "label": "active_uom",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "active_conversion_factor",
+   "fieldtype": "Float",
+   "label": "active_conversion_factor"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-10-10 14:00:40.195826",
+ "modified": "2024-08-07 14:03:26.628647",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_production_quantity",

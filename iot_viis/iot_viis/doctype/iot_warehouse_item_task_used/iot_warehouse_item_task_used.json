@@ -12,7 +12,12 @@
   "task_id",
   "iot_category_id",
   "exp_quantity",
-  "loss_quantity"
+  "loss_quantity",
+  "issued_quantity",
+  "total_qty_in_crop",
+  "draft_quantity",
+  "active_uom",
+  "active_conversion_factor"
  ],
  "fields": [
   {
@@ -38,7 +43,7 @@
    "fieldname": "iot_category_id",
    "fieldtype": "Link",
    "label": "V\u1eadt t\u01b0 s\u1eed d\u1ee5ng",
-   "options": "iot_category"
+   "options": "Item"
   },
   {
    "fieldname": "exp_quantity",
@@ -49,11 +54,37 @@
    "fieldname": "loss_quantity",
    "fieldtype": "Float",
    "label": "Hao hut/h\u01b0 h\u1ecfng"
+  },
+  {
+   "fieldname": "issued_quantity",
+   "fieldtype": "Float",
+   "label": "V\u1eadt t\u01b0 ti\u00eau hao"
+  },
+  {
+   "fieldname": "total_qty_in_crop",
+   "fieldtype": "Float",
+   "label": "T\u1ed5ng v\u1eadt t\u01b0 s\u1eed d\u1ee5ng"
+  },
+  {
+   "fieldname": "draft_quantity",
+   "fieldtype": "Float",
+   "label": "S\u1ed1 l\u01b0\u1ee3ng nh\u00e1p"
+  },
+  {
+   "fieldname": "active_uom",
+   "fieldtype": "Link",
+   "label": "UOM active",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "active_conversion_factor",
+   "fieldtype": "Float",
+   "label": "active conversion factor"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-08-05 13:54:49.373909",
+ "modified": "2024-08-07 13:07:56.280269",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_warehouse_item_task_used",

@@ -1,5 +1,4 @@
 {
- "_liked_by": "[\"Administrator\"]",
  "actions": [],
  "allow_import": 1,
  "allow_rename": 1,
@@ -20,7 +19,14 @@
   "type",
   "interval",
   "start_time",
-  "end_time"
+  "end_time",
+  "is_from_local",
+  "is_synced",
+  "schedule_plan_id",
+  "is_deleted",
+  "status",
+  "template_id",
+  "crop_id"
  ],
  "fields": [
   {
@@ -80,11 +86,53 @@
    "fieldname": "end_time",
    "fieldtype": "Time",
    "label": "End time"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_from_local",
+   "fieldtype": "Check",
+   "label": "is_from_local"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_synced",
+   "fieldtype": "Check",
+   "label": "is_synced"
+  },
+  {
+   "fieldname": "schedule_plan_id",
+   "fieldtype": "Link",
+   "label": "schedule_plan_id",
+   "options": "iot_schedule_plan"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_deleted",
+   "fieldtype": "Check",
+   "label": "is_deleted"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "\nrunning\nstopped\nfinished"
+  },
+  {
+   "fieldname": "template_id",
+   "fieldtype": "Link",
+   "label": "template_id",
+   "options": "iot_schedule_template"
+  },
+  {
+   "fieldname": "crop_id",
+   "fieldtype": "Link",
+   "label": "crop_id",
+   "options": "iot_crop"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-03-12 09:13:32.941339",
+ "modified": "2024-09-27 15:25:39.719901",
  "modified_by": "Administrator",
  "module": "Iot Viis",
  "name": "iot_schedule",
